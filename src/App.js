@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import PostingBox from './PostingBox/PostingBox'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends Component {
+
+  render () {
+    const style = {
+      height: '100%',
+      width: '100%',
+      position: 'absolute',
+      backgroundColor: '#7288a3'
+    };
+
+    return (
+      <div style={style}>
+        <PostingBox />
+      </div>
+    );
+  }
 }
 
 export default App;
