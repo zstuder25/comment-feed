@@ -11,8 +11,8 @@ const imageIcon = () => {
 const style = {
   borderRadius: '50%',
   border: '1px solid #ddd',
-  maxWidth: '10%',
-  maxHeight: '10%',
+  maxWidth: '7%',
+  maxHeight: '7%',
   margin: '2% 2% 10%'
 };
 

@@ -11,7 +11,8 @@ const photoVidButton = () => {
 
 const style = {
   display: 'inline-block',
-  float: 'left'
+  float: 'left',
+  borderRadius: '3vh'
 };
 
 export default photoVidButton;
