@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import PostingBox from './PostingBox/PostingBox'
 import PostingFeedContainer from "./PostingFeed/PostingFeedContainer";
+import PostingBoxContainer from "./PostingBox/PostingBoxContainer";
 
 
 class App extends Component {
@@ -16,7 +16,7 @@ class App extends Component {
 
     return (
       <div style={style}>
-        <PostingBox />
+        <PostingBoxContainer />
         <PostingFeedContainer />
       </div>
     );

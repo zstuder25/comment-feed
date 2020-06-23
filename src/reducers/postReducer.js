@@ -24,10 +24,19 @@ const INITIAL_STATE = {
   ],
 };
 
+const createPost = (postText) => {
+  return {
+    postText: postText,
+    postDateTime: new Date(),
+    likes: 0,
+    comments: []
+  }
+};
+
 export default (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case 'MAKE_POST':
-      return { ...state, posts: state.posts.push(action.type) };
+      return {...state, posts: state.posts.concat([createPost(action.post)])};
     case 'ADD_COMMENT' :
       //TODO for adding comments
       return state;
