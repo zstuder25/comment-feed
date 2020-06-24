@@ -1,0 +1,79 @@
+.post {
+    width: 50%;
+    margin: 1% 25%;
+    border-radius: 2vh;
+}
+
+.textBox {
+    margin-top: 3%;
+}
+
+.textBox p {
+    margin-bottom: 0;
+}
+
+.textBox img {
+    max-height: 2%;
+    max-width: 2%;
+}
+
+.location {
+    color: blue;
+    font-size: 60%;
+}
+
+.relativeTime {
+    font-size: 25%;
+}
+
+.ellipsis {
+    max-height: 5%;
+    max-width: 5%;
+    float: right;
+}
+
+.likesComments {
+    margin-top: 2%;
+    font-size: 75%;
+    color: gray;
+}
+
+.likesComments img {
+    max-height: 0.5%;
+    max-width: 0.5%;
+}
+
+.likesComments span {
+    margin: 0 1%;
+}
+
+.likesCommentsButtons {
+    width: 35%;
+}
+
+.likesCommentsButtons button {
+    border: transparent;
+}
+
+.likesCommentsButtons button:hover {
+    background-color: inherit;
+    color: black;
+}
+
+/*TODO get to work */
+/*.likesCommentsButtons button:focus {*/
+/*    outline: none !important;*/
+/*    border: transparent !important;*/
+/*}*/
+
+.commentIcon {
+    margin-right: 5%;
+    max-height: 15%;
+    max-width: 15%;
+}
+
+.likeIcon {
+    margin-right: 5%;
+    max-height: 20%;
+    max-width: 20%;
+}

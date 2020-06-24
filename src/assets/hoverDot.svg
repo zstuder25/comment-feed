@@ -1,0 +1,19 @@
+<?xml version="1.0"?><svg width="256" height="256" xmlns="http://www.w3.org/2000/svg">
+ <title>blue-hover</title>
+ <defs>
+  <filter id="filter3210" x="-0.084325" width="1.168649" y="-0.109292" height="1.218584">
+   <feGaussianBlur stdDeviation="2.769177" id="feGaussianBlur3212"/>
+  </filter>
+  <filter id="filter3226">
+   <feGaussianBlur stdDeviation="0.173074" id="feGaussianBlur3228"/>
+  </filter>
+ </defs>
+ <metadata id="metadata7">image/svg+xml</metadata>
+ <g>
+  <title>Layer 1</title>
+  <g id="layer1">
+   <path id="path2383" d="m255.999954,127.999901a128.000031,127.999977 0 1 1 -256.000034,0a128.000031,127.999977 0 1 1 256.000034,0z" filter="url(#filter3226)" stroke-miterlimit="4" stroke-width="7.5" fill="#999999"/>
+   <path id="path2385" d="m252.99968,114.7994a124.999939,113.799683 0 1 1 -249.99985,0a124.999939,113.799683 0 1 1 249.99985,0z" filter="url(#filter3210)" stroke-miterlimit="4" stroke-width="7.5" fill="#999999"/>
+  </g>
+ </g>
+</svg>

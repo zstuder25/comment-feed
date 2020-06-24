@@ -45,7 +45,6 @@ const inputStyle = {
   borderBottom: '1px solid #ced4da',
   display: 'inline',
   width: '75%',
-  marginTop: '2%',
   resize: 'none'
 };
 

@@ -1,9 +1,9 @@
 import React from "react";
-import Post from './Post/Post'
+import PostContainer from "./Post/PostContainer";
 
 const postingFeed = (props) => {
-  const posts = props.allPosts.map( post =>
-    <Post postText={post.postText} />
+  const posts = props.allPosts.map( (post, index) =>
+    <PostContainer postIndex={index} />
   );
 
   return (
