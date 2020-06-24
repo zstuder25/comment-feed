@@ -1,11 +1,11 @@
 import React from "react";
 import {Button, ButtonGroup, Card, Image} from "react-bootstrap";
 import IconImage from './../../IconImage/IconImage'
-import moment from "moment";
+import PostMetaInfo from './PostMetaInfo/PostMedaInfo'
+import CommentList from './CommentList/CommentList'
 import './Post.css'
-import LocationIcon from '../../assets/location.svg'
 import HoverDot from '../../assets/hoverDot.svg'
-import Like from '../../assets/heart.svg'
+import Like from '../../assets/heartGray.svg'
 import Comment from '../../assets/comment.svg'
 import Ellipsis from '../../assets/ellipsis.svg'
 
@@ -14,14 +14,7 @@ const post = (props) => {
     <Card className='post'>
       <Card.Title>
         <IconImage  />
-        <div className='textBox'>
-          <Card.Text>Zach Studer</Card.Text>
-          <Card.Text className='location'>
-            <Image src={LocationIcon}/>
-            OH, USA
-          </Card.Text>
-          <Card.Text className='relativeTime'>{moment(props.post.postDateTime).fromNow()}</Card.Text>
-        </div>
+        <PostMetaInfo time={props.post.postDateTime} />
         <Image src={Ellipsis} className='ellipsis'/>
       </Card.Title>
       <Card.Body>
@@ -43,6 +36,7 @@ const post = (props) => {
             Comment
           </Button>
         </ButtonGroup>
+        {props.post.comments.length > 0  && <CommentList comments={props.post.comments}/> }
       </Card.Footer>
     </Card>
   )

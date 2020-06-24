@@ -1,0 +1,51 @@
+.commentCard {
+    background-color: #d9e1eb;
+    margin: 1% 0;
+}
+
+.metaInfo {
+    display: inline-block;
+}
+
+.metaInfo p {
+    margin-bottom: 0;
+    font-size: small;
+}
+
+.timeStamp {
+    float: right;
+    font-size: small;
+    margin-right: 2%;
+}
+
+.innerCard {
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.commentText {
+    margin-bottom: 2%;
+}
+
+.commentOptions {
+    color: #747386;
+}
+
+.commentOptions button {
+    background-color: transparent;
+    border: none;
+    color: #747386;
+    font-size: small;
+    max-width: 15%;
+}
+
+.commentOptions button:hover {
+    background-color: inherit;
+    color: black;
+}
+
+.commentOptions img {
+    max-width: 15%;
+    max-height: 15%;
+    margin-right: 5%;
+}

@@ -7,16 +7,23 @@ const initialState = {
       postDateTime: new Date(new Date().getTime() - (5*60000)), // Five minutes ago
       likes: 1,
       comments: [
-          //TODO comments
+        {
+          commentText: 'woah, so cool',
+          likes: 1,
+          commentDateTime: new Date(new Date().getTime() - (3*60000)) // Three minutes ago
+        },
+        {
+          commentText: 'this is the next comment',
+          likes: 0,
+          commentDateTime: new Date()
+        }
       ]
     },
     {
       postText: 'Second is best!',
       postDateTime: new Date(),
       likes: 2,
-      comments: [
-          //TODO comments
-      ]
+      comments: []
     }
   ],
 };
@@ -46,11 +53,11 @@ export default (state = initialState, action) => {
   switch (action.type) {
     case 'MAKE_POST':
       return {...state, posts: state.posts.concat([createPost(action.post)])};
+    case 'LIKE_POST':
+      return {...state, posts: incrementLikes(state, action.postIndex)};
     case 'ADD_COMMENT' :
       //TODO for adding comments
       return state;
-    case 'LIKE_POST':
-      return {...state, posts: incrementLikes(state, action.postIndex)};
     case 'ADD_LIKE_TO_COMMENT':
       //TODO
       return state;
