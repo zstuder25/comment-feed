@@ -1,4 +1,5 @@
 This project is running at https://zstuder25.github.io/comment-feed/
+To deploy changes to this URL run ```yarn run deploy```
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
