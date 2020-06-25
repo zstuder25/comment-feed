@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import {Button, ButtonGroup, Card, Image} from "react-bootstrap";
 import IconImage from './../../IconImage/IconImage'
 import PostMetaInfo from './PostMetaInfo/PostMedaInfo'
@@ -11,6 +11,9 @@ import Comment from '../../assets/comment.svg'
 import Ellipsis from '../../assets/ellipsis.svg'
 
 const post = (props) => {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const [addComment, setAddComment] = useState(false);
+
   return (
     <Card className='post'>
       <Card.Title>
@@ -32,12 +35,12 @@ const post = (props) => {
             <Image src={Like} className='likeIcon' />
             Like
           </Button>
-          <Button variant='outline-secondary'>
+          <Button variant='outline-secondary' onClick={() => setAddComment(!addComment)}>
             <Image src={Comment} className='commentIcon' />
             Comment
           </Button>
         </ButtonGroup>
-        <AddCommentInput addComment={props.addComment} />
+        {addComment && <AddCommentInput addComment={props.addComment} />}
         {props.post.comments.length > 0  && <CommentList comments={props.post.comments} postIndex={props.postIndex}/> }
       </Card.Footer>
     </Card>

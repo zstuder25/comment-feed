@@ -6,7 +6,7 @@ import Comment from "./Comment";
       dispatch({ type: "LIKE_COMMENT",  postIndex: props.postIndex, commentIndex: props.commentIndex })
     },
     editComment: (commentText) => {
-      dispatch({ type: "EDIT_COMMENT",  postIndex: props.postIndex, comment: commentText })
+      dispatch({ type: "EDIT_COMMENT",  postIndex: props.postIndex, commentIndex: props.commentIndex, commentText: commentText })
     },
     deleteComment: () => {
       dispatch({ type: "DELETE_COMMENT",  postIndex: props.postIndex, commentIndex: props.commentIndex })
