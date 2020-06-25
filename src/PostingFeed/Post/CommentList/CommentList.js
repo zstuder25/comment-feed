@@ -1,12 +1,12 @@
 import React from "react";
-import Comment from './Comment/Comment'
 import IconImage from './../../../IconImage/IconImage'
+import CommentContainer from "./Comment/CommentContainer";
 
 const commentList = (props) => {
-  const comments = props.comments.map( (comment) =>
+  const comments = props.comments.map( (comment, index) =>
     <div>
       <IconImage/>
-      <Comment comment={comment} />
+      <CommentContainer postIndex={props.postIndex} comment={comment} commentIndex={index}/>
     </div>
   );
 

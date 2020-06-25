@@ -1,1 +1,1 @@
-export const getPosts = state => state.posts.sort((a, b) => b.postDateTime - a.postDateTime);;
+export const getPosts = state => state.posts.slice().sort((a, b) => b.postDateTime - a.postDateTime);

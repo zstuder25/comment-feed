@@ -1,8 +1,9 @@
 import React from "react";
-import {Button, ButtonGroup, Card, Image} from "react-bootstrap";
+import {Button, ButtonGroup, Card, Form, Image} from "react-bootstrap";
 import IconImage from './../../IconImage/IconImage'
 import PostMetaInfo from './PostMetaInfo/PostMedaInfo'
 import CommentList from './CommentList/CommentList'
+import AddCommentInput from './AddCommentInput/AddCommentInput'
 import './Post.css'
 import HoverDot from '../../assets/hoverDot.svg'
 import Like from '../../assets/heartGray.svg'
@@ -36,7 +37,8 @@ const post = (props) => {
             Comment
           </Button>
         </ButtonGroup>
-        {props.post.comments.length > 0  && <CommentList comments={props.post.comments}/> }
+        <AddCommentInput/>
+        {props.post.comments.length > 0  && <CommentList comments={props.post.comments} postIndex={props.postIndex}/> }
       </Card.Footer>
     </Card>
   )

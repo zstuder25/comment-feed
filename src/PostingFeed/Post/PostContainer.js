@@ -6,9 +6,9 @@ const mapStateToProps = (state, props) => ({
   post: getPosts(state)[props.postIndex]
 });
 
-const mapDispatchToProps = dispatch => ({
-  likePost: postIndex => {
-    dispatch({ type: "LIKE_POST", postIndex: postIndex })
+const mapDispatchToProps = (dispatch, props) => ({
+  likePost: () => {
+    dispatch({ type: "LIKE_POST", postIndex: props.postIndex })
   },
 });
 

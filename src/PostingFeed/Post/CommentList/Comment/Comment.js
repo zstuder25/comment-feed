@@ -19,9 +19,9 @@ const comment = (props) => {
       <Card.Text className='innerCard commentText'>{props.comment.commentText}</Card.Text>
       <ButtonGroup className='commentOptions'>
         <Button variant='outline-secondary' disabled >{props.comment.likes} Likes</Button> |
-        <Button variant='outline-secondary' ><Image src={Like}/> Like</Button> |
+        <Button variant='outline-secondary' onClick={props.likeComment} ><Image src={Like}/> Like</Button> |
         <Button variant='outline-secondary' ><Image src={Edit}/> Edit</Button> |
-        <Button variant='outline-secondary' ><Image src={Delete}/> Delete</Button>
+        <Button variant='outline-secondary' onClick={props.deleteComment} ><Image src={Delete}/> Delete</Button>
       </ButtonGroup>
     </Card>
   )

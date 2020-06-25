@@ -1,5 +1,7 @@
 // Garbage data to make graph appear
 
+import {createReducer} from "@reduxjs/toolkit";
+
 const initialState = {
   posts: [
     {
@@ -37,31 +39,39 @@ const createPost = (postText) => {
   }
 };
 
-const incrementLikes = (state, postIndex) => {
-  return state.posts.map((post, index) => {
-    if (index !== postIndex) {
-      return post
-    }
-    return {
-      ...post,
-      likes: post.likes + 1
-    }
-  });
+
+const createComment = (commentText) => {
+  return {
+    commentText: commentText,
+    likes: 0,
+    commentDateTime: new Date()
+  }
 };
 
-export default (state = initialState, action) => {
-  switch (action.type) {
-    case 'MAKE_POST':
-      return {...state, posts: state.posts.concat([createPost(action.post)])};
-    case 'LIKE_POST':
-      return {...state, posts: incrementLikes(state, action.postIndex)};
-    case 'ADD_COMMENT' :
-      //TODO for adding comments
-      return state;
-    case 'ADD_LIKE_TO_COMMENT':
-      //TODO
-      return state;
-    default:
-      return state;
+
+export default createReducer(initialState, {
+  ['MAKE_POST']: (state, action) => {
+    state.posts.push(createPost(action.post))
+  },
+  ['LIKE_POST']: (state, action) => {
+    state.posts.sort((a, b) => b.postDateTime - a.postDateTime);
+    state.posts[action.postIndex].likes ++
+  },
+  ['LIKE_COMMENT']: (state, action) => {
+    state.posts.sort((a, b) => b.postDateTime - a.postDateTime);
+    state.posts[action.postIndex].comments[action.commentIndex].likes ++
+  },
+  ['ADD_COMMENT']: (state, action) => {
+    state.posts.sort((a, b) => b.postDateTime - a.postDateTime);
+    state.posts[action.postIndex].comments.push(createComment(action.comment))
+  },
+  ['EDIT_COMMENT']: (state, action) => {
+    state.posts.sort((a, b) => b.postDateTime - a.postDateTime);
+    state.posts[action.postIndex].comments[action.commentIndex].commentText = action.commentText
+  },
+  ['DELETE_COMMENT']: (state, action) => {
+    state.posts.sort((a, b) => b.postDateTime - a.postDateTime);
+    const index = action.commentIndex;
+    state.posts[action.postIndex].comments.splice(index, index+1)
   }
-}
+})
