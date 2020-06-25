@@ -1,6 +1,7 @@
 .commentCard {
     background-color: #d9e1eb;
     margin: 1% 0;
+    border-radius: 2vh;
 }
 
 @media only screen and (max-width: 600px) {
@@ -81,7 +82,7 @@
 
 .editBox {
     border: 1px solid gray;
-    border-radius: 3vh;
+    border-radius: 4vh;
 }
 
 @media only screen and (max-width: 600px) {

@@ -8,8 +8,10 @@ const postMetaInfo = (props) => {
     <div className='textBox'>
       <Card.Text>Zach Studer</Card.Text>
       <Card.Text className='location'>
-        <Image src={LocationIcon}/>
-        OH, USA
+        <a href='https://goo.gl/maps/YnwfjgH64jth4rhc7' target='blank'>
+          <Image src={LocationIcon}/>
+          OH, USA
+        </a>
       </Card.Text>
       <Card.Text className='relativeTime'>{moment(props.time).fromNow()}</Card.Text>
     </div>

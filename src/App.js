@@ -1,20 +1,17 @@
-import React, {Component} from 'react';
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import PostingFeedContainer from "./PostingFeed/PostingFeedContainer";
 import PostingBoxContainer from "./PostingBox/PostingBoxContainer";
 import './App.css'
 
 
-class App extends Component {
-
-  render () {
+const app = () => {
     return (
-      <div>
+      <>
         <PostingBoxContainer />
         <PostingFeedContainer />
-      </div>
+      </>
     );
-  }
-}
+};
 
-export default App;
+export default app;

@@ -26,12 +26,11 @@
 }
 
 .location {
-    color: blue;
     font-size: 60%;
 }
 
 .relativeTime {
-    font-size: 25%;
+    font-size: 50%;
 }
 
 .ellipsis {
