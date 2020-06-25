@@ -24,7 +24,7 @@ const comment = (props) => {
       {
         <Card.Text className='innerCard commentText'>
           {!editComment ? props.comment.commentText :
-            <Form.Control defaultValue={props.comment.commentText} type='text'
+            <Form.Control defaultValue={props.comment.commentText} type='text' className='editBox'
               onInput={e => {
                 if(e.keyCode !== 13) {
                   setEditCommentText(e.target.value)

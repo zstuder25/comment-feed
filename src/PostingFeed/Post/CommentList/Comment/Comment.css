@@ -5,7 +5,7 @@
 
 @media only screen and (max-width: 600px) {
     .commentCard p {
-        font-size: xx-small;
+        font-size: x-small;
     }
 }
 
@@ -77,4 +77,15 @@
 .commentOptions img {
     max-width: 15%;
     max-height: 15%;
+}
+
+.editBox {
+    border: 1px solid gray;
+    border-radius: 3vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .editBox {
+        font-size: x-small;
+    }
 }

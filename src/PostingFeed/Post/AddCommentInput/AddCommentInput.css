@@ -1,4 +1,3 @@
-
 .addCommentBox {
     display: inline-block;
     width: 75%;
@@ -7,3 +6,8 @@
     border-radius: 4vh;
 }
 
+@media only screen and (max-width: 600px) {
+    .addCommentBox {
+        font-size: x-small;
+    }
+}
