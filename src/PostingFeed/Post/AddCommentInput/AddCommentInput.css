@@ -1,7 +1,9 @@
 
- .addCommentBox {
+.addCommentBox {
     display: inline-block;
     width: 75%;
     margin: 3%;
+    border: 1px solid black;
+    border-radius: 4vh;
 }
 

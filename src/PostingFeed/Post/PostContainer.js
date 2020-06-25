@@ -10,6 +10,9 @@ const mapDispatchToProps = (dispatch, props) => ({
   likePost: () => {
     dispatch({ type: "LIKE_POST", postIndex: props.postIndex })
   },
+  addComment: (commentText) => {
+    dispatch({ type: "ADD_COMMENT",  postIndex: props.postIndex, comment: commentText })
+  },
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Post);
