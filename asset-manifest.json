@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/comment-feed/static/css/main.fd0c234a.chunk.css",
-    "main.js": "/comment-feed/static/js/main.ab6707cc.chunk.js",
-    "main.js.map": "/comment-feed/static/js/main.ab6707cc.chunk.js.map",
+    "main.css": "/comment-feed/static/css/main.23125e3c.chunk.css",
+    "main.js": "/comment-feed/static/js/main.dae11da8.chunk.js",
+    "main.js.map": "/comment-feed/static/js/main.dae11da8.chunk.js.map",
     "runtime-main.js": "/comment-feed/static/js/runtime-main.22a412fe.js",
     "runtime-main.js.map": "/comment-feed/static/js/runtime-main.22a412fe.js.map",
     "static/css/2.ace36aee.chunk.css": "/comment-feed/static/css/2.ace36aee.chunk.css",
-    "static/js/2.dc14281f.chunk.js": "/comment-feed/static/js/2.dc14281f.chunk.js",
-    "static/js/2.dc14281f.chunk.js.map": "/comment-feed/static/js/2.dc14281f.chunk.js.map",
+    "static/js/2.f5521669.chunk.js": "/comment-feed/static/js/2.f5521669.chunk.js",
+    "static/js/2.f5521669.chunk.js.map": "/comment-feed/static/js/2.f5521669.chunk.js.map",
     "index.html": "/comment-feed/index.html",
-    "precache-manifest.2d5af32bd18c92cda14be4cff677d538.js": "/comment-feed/precache-manifest.2d5af32bd18c92cda14be4cff677d538.js",
+    "precache-manifest.4880c2df56db7396453a56d6bfe669d6.js": "/comment-feed/precache-manifest.4880c2df56db7396453a56d6bfe669d6.js",
     "service-worker.js": "/comment-feed/service-worker.js",
     "static/css/2.ace36aee.chunk.css.map": "/comment-feed/static/css/2.ace36aee.chunk.css.map",
-    "static/css/main.fd0c234a.chunk.css.map": "/comment-feed/static/css/main.fd0c234a.chunk.css.map",
-    "static/js/2.dc14281f.chunk.js.LICENSE.txt": "/comment-feed/static/js/2.dc14281f.chunk.js.LICENSE.txt",
+    "static/css/main.23125e3c.chunk.css.map": "/comment-feed/static/css/main.23125e3c.chunk.css.map",
+    "static/js/2.f5521669.chunk.js.LICENSE.txt": "/comment-feed/static/js/2.f5521669.chunk.js.LICENSE.txt",
     "static/media/comment.svg": "/comment-feed/static/media/comment.7876e7b0.svg",
     "static/media/delete.svg": "/comment-feed/static/media/delete.a340eabf.svg",
     "static/media/edit.svg": "/comment-feed/static/media/edit.4a5a13c5.svg",
@@ -27,8 +27,8 @@
   "entrypoints": [
     "static/js/runtime-main.22a412fe.js",
     "static/css/2.ace36aee.chunk.css",
-    "static/js/2.dc14281f.chunk.js",
-    "static/css/main.fd0c234a.chunk.css",
-    "static/js/main.ab6707cc.chunk.js"
+    "static/js/2.f5521669.chunk.js",
+    "static/css/main.23125e3c.chunk.css",
+    "static/js/main.dae11da8.chunk.js"
   ]
 }
