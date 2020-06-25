@@ -1,0 +1,14 @@
+.profileImage {
+    border: 1px solid #ddd;
+    max-width: 7%;
+    max-height: 7%;
+    margin: 2%;
+    float: left;
+}
+
+@media only screen and (max-width: 900px) {
+    .profileImage {
+        max-width: 10%;
+        max-height: 10%;
+    }
+}

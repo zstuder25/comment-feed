@@ -32,11 +32,11 @@ const post = (props) => {
       <Card.Footer >
         <ButtonGroup className='likesCommentsButtons'>
           <Button variant='outline-secondary' onClick={() => props.likePost(props.postIndex)}>
-            <Image src={Like} className='likeIcon' />
+            <Image src={Like} />
             Like
           </Button>
           <Button variant='outline-secondary' onClick={() => setAddComment(!addComment)}>
-            <Image src={Comment} className='commentIcon' />
+            <Image src={Comment} />
             Comment
           </Button>
         </ButtonGroup>

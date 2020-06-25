@@ -1,19 +1,12 @@
 import React from "react";
 import ProfilePic from '../assets/profilePicture.jpg'
 import {Image} from "react-bootstrap";
+import './IconImage.css'
 
 const imageIcon = () => {
   return (
-    <Image src={ProfilePic} style={style} roundedCircle/>
+    <Image className='profileImage' src={ProfilePic} roundedCircle/>
   )
-};
-
-const style = {
-  border: '1px solid #ddd',
-  maxWidth: '7%',
-  maxHeight: '7%',
-  margin: '2%',
-  float: 'left'
 };
 
 export default imageIcon;

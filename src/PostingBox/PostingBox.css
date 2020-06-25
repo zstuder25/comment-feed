@@ -1,0 +1,25 @@
+.cardStyle {
+    width: 50%;
+    margin: 2% 25%;
+    border-radius: 5vh;
+}
+
+@media only screen and (max-width: 750px) {
+    .cardStyle {
+        width: 80%;
+        margin: 2% 10%;
+    }
+}
+
+.inputStyle {
+    border: none;
+    border-bottom: 1px solid #ced4da;
+    display: inline;
+    width: 75%;
+    resize: none
+}
+
+.postItButtonStyle {
+    display: inline-block;
+    float: right
+}

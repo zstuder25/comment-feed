@@ -3,6 +3,12 @@
     margin: 1% 0;
 }
 
+@media only screen and (max-width: 600px) {
+    .commentCard p {
+        font-size: xx-small;
+    }
+}
+
 .metaInfo {
     display: inline-block;
 }
@@ -38,6 +44,29 @@
     color: #747386;
     font-size: small;
     max-width: 15%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+    .commentOptions .text {
+        display: none;
+    }
+
+    .commentOptions button {
+        max-width: 20%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .commentOptions button {
+        max-width: 25%;
+    }
+
+    .commentOptions img {
+        max-width: 100%;
+        max-height: 100%;
+    }
 }
 
 .commentOptions button:hover {
@@ -48,5 +77,4 @@
 .commentOptions img {
     max-width: 15%;
     max-height: 15%;
-    margin-right: 5%;
 }

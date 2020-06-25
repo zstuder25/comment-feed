@@ -41,10 +41,25 @@ const comment = (props) => {
         </Card.Text>
       }
       <ButtonGroup className='commentOptions'>
-        <Button variant='outline-secondary' disabled >{props.comment.likes} Likes</Button> |
-        <Button variant='outline-secondary' onClick={props.likeComment} ><Image src={Like}/> Like</Button> |
-        <Button variant='outline-secondary' onClick={() => setEditComment(!editComment)} ><Image src={Edit}/> Edit</Button> |
-        <Button variant='outline-secondary' onClick={props.deleteComment} ><Image src={Delete}/> Delete</Button>
+        <Button variant='outline-secondary' disabled >
+          {props.comment.likes}
+          <span className='text'> Likes</span>
+        </Button>
+        <span className='text'>|</span>
+        <Button variant='outline-secondary' onClick={props.likeComment} >
+          <Image src={Like}/>
+          <span className='text'> Like</span>
+        </Button>
+        <span className='text'>|</span>
+        <Button variant='outline-secondary' onClick={() => setEditComment(!editComment)} >
+          <Image src={Edit}/>
+          <span className='text'> Edit</span>
+        </Button>
+        <span className='text'>|</span>
+        <Button variant='outline-secondary' onClick={props.deleteComment} >
+          <Image src={Delete}/>
+          <span className='text'> Delete</span>
+        </Button>
       </ButtonGroup>
     </Card>
   )

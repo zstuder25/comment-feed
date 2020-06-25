@@ -4,6 +4,13 @@
     border-radius: 2vh;
 }
 
+@media only screen and (max-width: 750px) {
+    .post {
+        width: 80%;
+        margin: 2% 10%;
+    }
+}
+
 .textBox {
     margin-top: 3%;
     display: inline-block;
@@ -34,6 +41,13 @@
     margin: 2%;
 }
 
+@media only screen and (max-width: 650px) {
+    .ellipsis {
+        max-height: 5%;
+        max-width: 5%;
+    }
+}
+
 .likesComments {
     margin-top: 2%;
     font-size: 75%;
@@ -53,8 +67,29 @@
     width: 35%;
 }
 
+@media only screen and (max-width: 1200px) {
+    .likesCommentsButtons {
+         width: 50%;
+     }
+
+    .likesCommentsButtons img {
+        max-width: 50%;
+        max-height: 50%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .likesCommentsButtons {
+        width: 75%;
+    }
+}
+
 .likesCommentsButtons button {
     border: transparent;
+    background-color: transparent;
+    border: none;
+    color: #747386;
+    font-size: small;
 }
 
 .likesCommentsButtons button:hover {
@@ -62,20 +97,8 @@
     color: black;
 }
 
-/*TODO get to work */
-/*.likesCommentsButtons button:focus {*/
-/*    outline: none !important;*/
-/*    border: transparent !important;*/
-/*}*/
-
-.commentIcon {
-    margin-right: 5%;
-    max-height: 15%;
+.likesCommentsButtons img {
     max-width: 15%;
-}
-
-.likeIcon {
+    max-height: 15%;
     margin-right: 5%;
-    max-height: 20%;
-    max-width: 20%;
 }
